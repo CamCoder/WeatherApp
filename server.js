@@ -23,7 +23,7 @@ app.use(express.static('website'));
 const port = 8000;
 
 // TODO-Spin up the server
-const server = app.listen(port, listening);
+const server = app.listen(process.env.PORT || port, listening);
 function listening(){
     console.log(`running on localhost: ${port}`);
 };
