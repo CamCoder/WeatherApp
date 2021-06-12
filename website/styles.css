@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    
+}
+html{
+    background: linear-gradient(
+        to right bottom, 
+        #359795 0%, 
+        #47A8BD 29%,
+        #B5FED9 67%,
+        #78BFCE 100%
+    );
+    background-image: linear-gradient(-225deg, #0c5a41 0%, #097449 29%, #eaf557 67%, #fa9b48 100%);
+    /* background: linear-gradient(to right top, #68CAC8, #B5FED9); */
+    /* background: linear-gradient(to right top, #c1fffe, #ffffff); */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+body{
+    font-family:  Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{    
+    margin-top: 5em;
+    min-height: 20vh;
+    width: 550px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.4);
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.7), 
+        rgba(255,255,255,.3));
+    
+    /* background: #2274A5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.holder{
+    color: #2274A5 ;
+    color:black;
+    opacity: 0.8;
+    margin-top: 1em;
+    font-size: 2.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#zip{
+    min-height: 2.5em;
+    text-align: center;
+    border-style: none;
+    border-radius: 50px;
+    background: white;
+    border: none;
+}
+
+#feelings{
+    width: 80%;
+    border-radius: 20px;
+    border-style: none;
+    padding: 15px;
+    resize: none;
+    font-size: .5em;
+    text-align: center;
+}
+
+.submit{
+    background: white;
+    opacity: 1;
+    border-radius: 20px;
+    width: 75px;
+    height: 75px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    color: black;
+    outline: none;
+    border-style: none;
+}
+
+.myInput{
+    margin-top: .5em;
+    outline: none;
+}
+
+.myInput:focus::placeholder {
+    color: transparent;
+}
+
+/* Entry Cards */
+
+#wrapper{
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    min-height: 40vh;
+    margin-top: 50px;
+    padding: 20px; 
+    justify-content: center;
+}
+
+/* Edit scrollbar */
+::-webkit-scrollbar{width:0px;height:2px;}
+::-webkit-scrollbar-button{width:0px;height:2px;}
+
+#entryContainer{
+    width: 100%;
+    max-width: 700px;
+    min-width: 550px;
+    height: 400px;
+    padding: 50px;
+    overflow: auto; 
+    box-shadow: 0px 7px 46px 0px rgba(41, 53, 108, 0.45);
+    background: #2274A5;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.7), 
+        rgba(255,255,255,.3));
+    border-radius: 50px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 2em;
+}
+
+.entry{
+    font-size: small;
+    background: white;
+    color: black;
+    max-width: 400px;
+    min-height: 200px ;
+    display: flex;
+    overflow: auto;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.7), 
+        rgba(255,255,255,.5)); ;
+    background-color: #0c5a41;
+}
+
+.title{
+    font-size: 2em;
+}
+
+
