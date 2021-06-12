@@ -1,5 +1,5 @@
 // API Vars
-const baseURL = "http://api.openweathermap.org/data/2.5/weather?zip="
+const baseURL = "https://api.openweathermap.org/data/2.5/weather?zip="
 const apiKey = "&appid=5bc07b36893e241b286b9987c65e1b57"
 const unit = "&units=imperial"
 
